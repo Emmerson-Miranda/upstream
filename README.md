@@ -15,14 +15,6 @@ Using docker compose
 docker-compose -f docker-compose.yaml up
 ```
 
-## Jaeger UI
-
-Open in a browser 
-```
-http://localhost:16686/search
-```
-
-
 ## Test the image
 
 ```
