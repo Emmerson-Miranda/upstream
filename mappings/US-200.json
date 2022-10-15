@@ -1,0 +1,18 @@
+{
+    "request": {
+        "method": "ANY",
+        "url": "/microservice/myservice",
+        "headers": {
+            "X-US-SCENARIO": {
+                "equalTo" : "200"
+            }
+          }
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {"upstream":"You reach the upstream and your request its been processed."},
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

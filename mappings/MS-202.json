@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "ANY",
+        "url": "/microservice/modsecurity"
+    },
+    "response": {
+        "status": 202,
+        "jsonBody": {"upstream":"ACK ModSecurity entry."}
+    }
+}

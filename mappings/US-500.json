@@ -1,0 +1,18 @@
+{
+    "request": {
+        "method": "ANY",
+        "url": "/microservice/myservice",
+        "headers": {
+            "X-US-SCENARIO": {
+                "equalTo" : "500"
+            }
+          }
+    },
+    "response": {
+        "status": 500,
+        "jsonBody": {"upstream":"You reach the upstream but there is a internal error."},
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}
