@@ -1,0 +1,9 @@
+POST /microservice/myservice HTTP/1.0
+User-Agent: netcatExample
+X-US-SCENARIO: 200
+Content-Length: 19
+Content-Type: application/json
+
+{
+    "name":"Bob" 
+}
