@@ -1,5 +1,16 @@
 # Introduction
-Simple "UPSTREAM" mock server based on wiremock 
+Simple "UPSTREAM" mock server powered by wiremock.
+
+Listening:
+- Listen HTTP requests on 10003 port.
+- Listen HTTPS requests on 10443 port.
+
+Resources:
+- /microservice/myservice
+- /microservice/modsecurity
+
+### Simulating response status codes
+Call "/microservice/myservice" resource passing X-US-SCENARIO header, to simulate error scenarios, the supported values are: 200, 400, 500. 
 
 # Usage
 
