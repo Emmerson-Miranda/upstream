@@ -1,0 +1,7 @@
+POST /microservice/myservice HTTP/1.0
+User-Agent: netcatExample
+X-US-SCENARIO: 200
+Content-Length: 60
+Content-Type: application/x-www-form-urlencoded
+
+This is the request's body, it can be xml, json or anything.

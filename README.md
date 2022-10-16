@@ -175,3 +175,14 @@ $ curl https://localhost:10443/microservice/modsecurity -d "body"  -v -k
 * Connection #0 to host localhost left intact
 {"upstream":"ACK ModSecurity entry."}* Closing connection 0
 ```
+
+Alternatively to curl you can use netcat instead of curl.
+
+% cat ./example_raw_request | nc localhost 10003
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: df9b45d6-7e22-473a-ac12-3d72693ef837
+Server: Jetty(9.2.z-SNAPSHOT)
+
+{"upstream":"You reach the upstream and your request its been processed."}```
